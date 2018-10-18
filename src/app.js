@@ -1,10 +1,11 @@
+"use strict"
+const express = require("express")
+const bodyParser = require('body-parser')
 const DatabaseManager = require("./dbmanager")
 const db = new DatabaseManager("./transactionsdb.sqlite3", (err) => {
 	if(err) {
 		return
 	}
-	const express = require("express")
-	const bodyParser = require('body-parser')
 	const app = express()
 	const port = 8080
 	app.use(bodyParser.json())
