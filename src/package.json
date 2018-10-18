@@ -1,0 +1,17 @@
+{
+  "name": "wallet-api",
+  "version": "1.0.0",
+  "description": "Wallet API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_server": "node app.js"
+  },
+  "author": "Dwight Padilla",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "sqlite3": "^4.0.2"
+  }
+}
